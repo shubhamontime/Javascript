@@ -31,6 +31,9 @@ Control flow
 Loops (for, while, do-while)
 High order array methods
 filter, map, reduce
+🔗 Chai aur Code (JavaScript Full Course):
+https://youtu.be/sscX432bMZo
+
 🔹 Part 2 – DOM & Advanced Concepts (Sheryians Coding School)
 Introduction
 DOM (Document Object Model)
@@ -39,3 +42,5 @@ Forms & Form Validation
 Timers & Intervals
 localStorage, sessionStorage & Cookies
 Practice Questions
+🔗 Sheryians Coding School Playlist:
+youtube.com/playlist?list=PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A
