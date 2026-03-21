@@ -1,4 +1,41 @@
 # Javascript
-I am currently learning JavaScript from Sheryians Coding School. This repository is created for my revision and practice.
+I am currently learning JavaScript from Chai aur Code and Sheryians Coding School. This repository is created for my revision and practice during my learning journey.
 
-Here, I upload my notes, small projects, and exercises that I build during my learning journey. The main goal of this repo is to strengthen my concepts and track my progress in JavaScript.
+Here, I store my notes, concepts, and small projects to strengthen my fundamentals and track my progress in JavaScript.
+
+🚀 Topics Covered:
+🔹 Part 1 – JavaScript Basics (Chai aur Code)
+Setting up environment
+Working with GitHub
+let, const, var
+Datatypes & ECMA standards
+Datatype conversion
+String to number conversion
+Comparison of datatypes
+Datatypes summary
+Stack & Heap memory
+Strings in JavaScript
+Numbers & Math
+Date & Time
+Arrays (Part 1 & 2)
+Objects (Part 1 & 2)
+Object destructuring & JSON API
+Functions & parameters
+Functions with objects
+Global & local scope
+Scope & hoisting
+this keyword & arrow functions
+Immediately Invoked Function (IIFE)
+How JavaScript works behind the scenes
+Control flow
+Loops (for, while, do-while)
+High order array methods
+filter, map, reduce
+🔹 Part 2 – DOM & Advanced Concepts (Sheryians Coding School)
+Introduction
+DOM (Document Object Model)
+Events & Event Handling
+Forms & Form Validation
+Timers & Intervals
+localStorage, sessionStorage & Cookies
+Practice Questions
