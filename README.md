@@ -43,4 +43,4 @@ Timers & Intervals
 localStorage, sessionStorage & Cookies
 Practice Questions
 🔗 Sheryians Coding School Playlist:
-youtube.com/playlist?list=PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A
+https://www.youtube.com/playlist?list=PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A
