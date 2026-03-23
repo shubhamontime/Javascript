@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Creator - Sheryians</title>
+    
+    <style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form Styling */
+form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: #4a90e2;
+}
+
+form input[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #357abd;
+}
+
+/* Main Container for Cards */
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Single Card Styling */
+.card {
+    width: 280px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* Profile Image Container */
+.profile {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    border: 3px solid #4a90e2;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text Content within Card */
+.card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.card h5 {
+    font-size: 0.95rem;
+    color: #4a90e2;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+</style>
+
+</head>
+
+<body>
+   
+    <form>
+        <input type="text" placeholder="Enter Image URL">    <!-- inputs[0] -->
+        <input type="text" placeholder="Enter Name">         <!-- inputs[1] -->
+        <input type="text" placeholder="Enter Profession">   <!-- inputs[2] -->
+        <input type="text" placeholder="Enter Description">  <!-- inputs[3] -->
+        <input type="submit" value="Create Card">
+    </form>
+
+    <div id="main"></div>
+
+    <script>
+        let form = document.querySelector("form");
+let inputs = document.querySelectorAll("input");
+let main = document.querySelector("#main");
+
+form.addEventListener("submit", function (dets) {
+    dets.preventDefault();
+
+    let card = document.createElement("div");
+    card.classList.add("card");
+
+    let profile = document.createElement("div");
+    profile.classList.add("profile");
+
+    let img = document.createElement("img");
+    img.setAttribute("src", inputs[0].value);
+
+    let h3 = document.createElement("h3");
+    h3.textContent = inputs[1].value;
+    let h5 = document.createElement("h5");
+    h5.textContent = inputs[2].value;
+    let p = document.createElement("p");
+    p.textContent = inputs[3].value;
+
+    profile.appendChild(img);
+    card.appendChild(profile);
+
+    card.appendChild(h3);
+    card.appendChild(h5);
+    card.appendChild(p);
+
+    main.appendChild(card);
+
+    inputs.forEach(function (inp) {
+        if (inp.type !== "submit") {
+            inp.value = "";
+        }
+    });
+}); 
+</script>
+
+</body>
+
+</html>
