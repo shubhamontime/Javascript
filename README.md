@@ -1,4 +1,6 @@
 # Javascript
+![My Image](./screensho.png)
+![My Image](./screshot.png)
 I am currently learning JavaScript from Chai aur Code and Sheryians Coding School. This repository is created for my revision and practice during my learning journey.
 
 Here, I store my notes, concepts, and small projects to strengthen my fundamentals and track my progress in JavaScript.
